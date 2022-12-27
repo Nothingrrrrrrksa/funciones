@@ -1,18 +1,22 @@
-public class Main {
-    
+
+    public class Main {
         public static void main(String[] args) {
+            coche miCoche = new coche();
+            miCoche.AumentarPuertas();
+        
+            System.out.print(miCoche.NumeroPuertas);
+        }
     
-        int numero1 = 5;
-        int numero2 = 10;
-        int numero3 = 200;
+    public static int suma(int a, int b) {
+        return a + b;
 
-        sumatoria(numero1, numero2, numero3);
-     
     }
+    }
+    class coche {
+        public int NumeroPuertas = 0;
     
-    public static void sumatoria(int a, int b, int c) {
-        System.out.println(a + b + c);
+        public void AumentarPuertas(){
+            this.NumeroPuertas++;
+        }
     }
-}
-
 
